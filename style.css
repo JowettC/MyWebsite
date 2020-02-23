@@ -1,90 +1,173 @@
 .navbar {
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.navbar .nav-link {
-    color: #fff;
+.nav-item,
+.navbar-brand,
+.nav-link {
+  color: #e8e8e8;
+  text-align: center;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: #fff;
-    text-decoration: none;
+.nav-item {
+  width: 165px;
+  padding: 5px;
+  text-align: center;
 }
 
-.navbar .navbar-brand {
-    color: #fff;
+.navbar-brand {
+  margin-left: 5vw;
+  text-align: center;
 }
 
-
-/* Change navbar styling on scroll */
-.navbar.active {
-    background: #fff;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+:root {
+  --mainColor: #e8e8e8;
 }
 
-.navbar.active .nav-link {
-    color: #555;
+.nav-link {
+  font-weight: bold;
+  background:
+    linear-gradient(to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #e8e8e8;
+  transition: background-size .2s;
+  text-align: center;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
 
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
+.show ul li a {
+  color: black;
 }
 
-.navbar.active .navbar-brand {
-    color: #555;
+.nav-link:hover {
+  background-size: 4px 50px;
+  color: #000000;
 }
 
-
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-    .navbar {
-        background: #fff;
-    }
-
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #555;
-    }
+.active {
+  pointer-events: none;
 }
 
-
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
-.text-small {
-    font-size: 0.9rem !important;
+/* content */
+.line-1,
+.line-2,
+.line-3 {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.slogan {
+  font-size: 8.0vh;
+  align-content: center;
+  font-family: "Impact", "fantasy";
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+li {
+  float: none;
+  display: inline-block;
+}
+
+li {
+  padding: 20px
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  background-image: url(img/icons8-menu-64.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5vw;
+}
+
+.collapsing,
+.show {
+  background-color: white;
+  opacity: 1;
+  border-radius: 15px;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
 html,
 body {
-    height: 100%;
-    font-size:2vh;
+  /* height: 100%; */
+  font-size: 1.8vh;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  /* font-size:15px; */
 }
 
 body {
-
-    /* background-color: #4ca1af;
-    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%); */
+  background-color: black;
+  /* background-image:url(img/background.jpg); */
 }
-.container{
+
+body::after {
+  content: "";
+  background: url(img/background.jpg);
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
   justify-content: center;
 }
+/* home */
 #homeSection{
+  color:white;
+}
+#homeSlogan{
+  font-size:7vw;
+  color:white;
+}
+
+
+/* about */
+#aboutMeSection {
   margin-top: 10vh;
   justify-content: center;
 }
-#homeSection div{
-  /* margin: 10px; */
+
+#aboutMeSection div {
   text-align: center;
-  width:49%;
-  display:inline-block
+  width: 49%;
+  display: inline-block
 }
-img{
-      width: 100%;
+
+img {
+  width: 100%;
 }
