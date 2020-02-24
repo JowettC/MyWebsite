@@ -1,5 +1,9 @@
 .navbar {
   transition: all 0.4s;
+    position: fixed;
+}
+#nav-container{
+  min-width:80%
 }
 
 .nav-item,
@@ -10,13 +14,13 @@
 }
 
 .nav-item {
-  width: 165px;
+  width: 105px;
   padding: 5px;
   text-align: center;
 }
 
 .navbar-brand {
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
   text-align: center;
 }
 
@@ -24,7 +28,7 @@
   --mainColor: #e8e8e8;
 }
 
-.nav-link {
+/* .nav-link {
   font-weight: bold;
   background:
     linear-gradient(to bottom, var(--mainColor) 0%,
@@ -37,10 +41,11 @@
   text-align: center;
   margin-right: 1vw;
   margin-left: 1vw;
-}
+} */
 
 .show ul li a {
-  color: black;
+  color: white;
+  font-size:10px
 }
 
 .nav-link:hover {
@@ -59,12 +64,6 @@
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.slogan {
-  font-size: 8.0vh;
-  align-content: center;
-  font-family: "Impact", "fantasy";
 }
 
 .navbar-nav {
@@ -91,26 +90,29 @@ li {
 
 .collapsing,
 .show {
-  background-color: white;
+  background-color: grey;
   opacity: 1;
   border-radius: 15px;
   border: 0px;
   outline: none;
   box-shadow: none;
+  text-align: center;
+}
+
+.show .navbar-nav .nav-item {
+  /* width: 100% */
 }
 
 .centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  opacity:1
+
 }
 
 html,
 body {
   /* height: 100%; */
-  font-size: 1.8vh;
+  font-size: 1.2vh;
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -122,16 +124,24 @@ body {
   text-transform: uppercase;
   /* font-size:15px; */
 }
+.body-c{
+  max-width:80%
+}
 
 body {
   background-color: black;
   /* background-image:url(img/background.jpg); */
 }
+/* .background_color{
+  background-color: black;
+  background-size: 1920px 100%;
 
-body::after {
+} */
+
+/* .background {
   content: "";
   background: url(img/background.jpg);
-  background-size: 1920px auto;
+  background-size: 1920px 100%;
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
@@ -140,26 +150,64 @@ body::after {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;
-}
+  /* z-index: 10; */
+} */
 
 .container {
   justify-content: center;
 }
-/* home */
-#homeSection{
-  color:white;
+@media (min-width: 480px){
+ #homeSlogan {
+   font-size: 5vw;
+ }
 }
-#homeSlogan{
-  font-size:7vw;
-  color:white;
+@media (max-width:480px) {
+
+  /* change depending on the mobiles you're targeting */
+  div, span {
+    /* add further tags here according to your needs */
+    width: 100%;
+    font-size: 25px;
+  }
+  .hb{
+    font-size: 25px;
+  }
+
+  #homeSlogan {
+    font-size: 30px;
+  }
 }
 
+/* home */
+#homeSection {
+  color: white;
+}
+
+
+
+.hb {
+  border: solid;
+  display: inline-block;
+  width: 20%;
+  min-width:130px;
+  font-size: 1.5vh;
+  transition: border-width 0.3s linear;
+  margin-bottom: 10px;
+  text-align:center;
+
+}
+
+.hb:hover {
+  border-width: 10px;
+}
 
 /* about */
 #aboutMeSection {
-  margin-top: 10vh;
   justify-content: center;
+  margin-left: 10vw;
+}
+.aboutBackground{
+  background-color:white;
 }
 
 #aboutMeSection div {

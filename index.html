@@ -10,71 +10,105 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <nav class="navbar navbar-expand-lg " style="height:100px;  float: none;
+  <div id="nav-container" class="container">
+
+
+    <nav class="navbar navbar-expand-lg " style="height:100px;  float: none;
 position: relative;
 left: 0%;
 ">
-    <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
-    <a class="navbar-brand" href="#">JOWETTC</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" style="width:10px"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
-      <ul class="navbar-nav" style="align-content: center;">
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="home.html">home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">about<span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">projects <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">resume <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">contact <span class="sr-only"></span></a>
-        </li>
-      </ul>
+      <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
+      <a class="navbar-brand" href="#">JOWETTC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="width:10px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
+        <ul class="navbar-nav" style="align-content: center;">
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">about<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">projects <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">resume <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">contact <span class="sr-only"></span></a>
+          </li>
+        </ul>
 
-    </div>
-  </nav>
+      </div>
+    </nav>
+  </div>
 
 </head>
 
 <body>
-  <section id="homeSection">
-    <div class="centered">
+<div class= "container body-c">
 
-      <div style="">
-        <span id = "homeSlogan" >DEVELOPER</span>
+
+  <div class="background_color">
+
+    <div class="background">
+
+
+      <section id="homeSection" style="display:none">
+        <div class="centered" style ="margin-top:10vw">
+
+          <div style="">
+            <span id="homeSlogan">Developer</span>
+          </div>
+          <div>
+            <div class="hb home-button1">
+              <span>contact</span>
+            </div>
+            <div class="hb home-button2">
+              <span>resume</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
       </div>
-      <div>
-        <span>contact</span>
-        <span>resume</span>
-      </div>
-    </div>
 
-  </section>
+      <section id="aboutMeSection" style="display:none">
+        <span id>
+          I <br /> AM <br /> JOWETT
+        </span>
+        <div class="aboutBackground">
 
-  <section id="aboutMeSection" style="display: none;">
-    <div style="">
-      <img src="img/about_me.jpg" alt="">
-    </div>
-    <div style="">
-      <span>
-        Description
-      </span>
 
+
+
+          <div style="">
+            <span>
+              I AM JOWETT
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
   </div>
+  <div >
 
+  </div>
+</div>
 </body>
 <script>
+  $("#homeSection").fadeIn(2500);
+  // $("#aboutMeSection").fadeIn(2500);
+
+  //  var delayInMilliseconds = 2500;
+  //
+  // setTimeout(function() {
+  //
+  // }, delayInMilliseconds);
 </script>
 
 </html>
