@@ -1,9 +1,12 @@
 .navbar {
   transition: all 0.4s;
-    position: fixed;
+  position: absolute;
+  min-width: 70%;
 }
-#nav-container{
-  min-width:80%
+
+#nav-container {
+  min-width: 70%;
+  max-width: 70%
 }
 
 .nav-item,
@@ -14,7 +17,7 @@
 }
 
 .nav-item {
-  width: 105px;
+  /* width:100% */
   padding: 5px;
   text-align: center;
 }
@@ -28,33 +31,20 @@
   --mainColor: #e8e8e8;
 }
 
-/* .nav-link {
-  font-weight: bold;
-  background:
-    linear-gradient(to bottom, var(--mainColor) 0%,
-      var(--mainColor) 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 4px 4px;
-  color: #e8e8e8;
-  transition: background-size .2s;
-  text-align: center;
-  margin-right: 1vw;
-  margin-left: 1vw;
-} */
-
 .show ul li a {
   color: white;
-  font-size:10px
+  font-size: 10px
 }
 
 .nav-link:hover {
   background-size: 4px 50px;
-  color: #000000;
+  color: #03b6fc;
 }
 
 .active {
   pointer-events: none;
+  border-bottom: solid;
+  border-color: #03b6fc
 }
 
 /* content */
@@ -77,6 +67,26 @@ li {
 
 li {
   padding: 20px
+}
+
+@media (min-width: 480px) {
+  nav div ul {
+    width: 100%;
+    margin-left: 19vw;
+  }
+
+  .nav-item {
+    width: 105px;
+  }
+
+  .right {
+    margin-left: auto
+  }
+
+  .body-c {
+    max-width: 70%;
+    min-width: 70%;
+  }
 }
 
 .navbar-toggler,
@@ -103,41 +113,37 @@ li {
   /* width: 100% */
 }
 
-.centered {
-  /* text-align: center; */
-  opacity:1
-
-}
-
 html,
 body {
   /* height: 100%; */
   font-size: 1.2vh;
-  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   letter-spacing: 2px;
+  /* font-family: "BPdots Bold"; */
+  font-family: "Arial Black", "Gadget", sans-serif letter-spacing: 2px;
   word-spacing: 2px;
   color: #000000;
-  font-weight: 700;
+  /* font-weight: 700; */
   text-decoration: none solid rgb(68, 68, 68);
   font-style: normal;
   font-variant: normal;
   text-transform: uppercase;
   /* font-size:15px; */
 }
-.body-c{
-  max-width:80%
-}
 
 body {
-  background-color: black;
-  /* background-image:url(img/background.jpg); */
+  background-color: white;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  /* background-position: center; */
 }
+
 /* .background_color{
   background-color: black;
   background-size: 1920px 100%;
 
 } */
-
 /* .background {
   content: "";
   background: url(img/background.jpg);
@@ -151,54 +157,113 @@ body {
   right: 0;
   position: absolute;
   /* z-index: 10; */
-} */
+}
 
-.container {
+*/ .container {
   justify-content: center;
 }
-@media (min-width: 480px){
- #homeSlogan {
-   font-size: 5vw;
- }
+
+@media (min-width: 480px) {
+  #homeSlogan {
+    font-size: 5vw;
+  }
 }
+
 @media (max-width:480px) {
+  .navbar-brand {
+    margin-left: 10vw
+  }
+
+  .body-c {
+    max-width: 80%;
+    min-width: 80%;
+  }
 
   /* change depending on the mobiles you're targeting */
   div, span {
     /* add further tags here according to your needs */
     width: 100%;
-    font-size: 25px;
-  }
-  .hb{
-    font-size: 25px;
+    font-size: 15px;
   }
 
   #homeSlogan {
     font-size: 30px;
+    /* height:100vh */
   }
 }
 
-/* home */
+.centered {
+  padding-top: 30vh;
+  padding-bottom: 46vh;
+  opacity: 1
+}
+
+.body-c {
+  height: 87.5vh;
+}
+
+section {}
+
+/* home content -------------------------------------------------------------------------------------------------------*/
 #homeSection {
   color: white;
 }
 
+@media (max-width:480px) {
+  .centered {
+    padding-top: 20vh;
+    text-align: center;
+  }
 
+  #homeSlogan {
+    font-size: 50px
+  }
+
+  .homeDetails {
+    font-size: 10px
+  }
+}
+
+/* about content ------------------------------------------------------------------------------------------------------*/
+#aboutMeSection {
+  letter-spacing: 0px;
+  height: 100vh;
+  font-family: "Georgia", serif;
+  text-align: left;
+  text-transform:none;
+  font-weight:normal
+}
+#aboutHead{
+  font-size:5vh;
+  font-weight: bold;
+}
+#aboutDetails{
+  margin-left:5vw
+
+}
+
+#about_pic {
+  margin-top: 15vh;
+  margin-left: 10vw;
+  height: 660px;
+  width: 465px
+}
 
 .hb {
   border: solid;
   display: inline-block;
   width: 20%;
-  min-width:130px;
+  min-width: 130px;
   font-size: 1.5vh;
   transition: border-width 0.3s linear;
   margin-bottom: 10px;
-  text-align:center;
-
+  text-align: center;
+  border-color: #03b6fc
 }
 
 .hb:hover {
-  border-width: 10px;
+  /* border-width: 10px; */
+  color: #03b6fc
 }
 
 /* about */
@@ -206,12 +271,9 @@ body {
   justify-content: center;
   margin-left: 10vw;
 }
-.aboutBackground{
-  background-color:white;
-}
 
 #aboutMeSection div {
-  text-align: center;
+  /* text-align: center; */
   width: 49%;
   display: inline-block
 }

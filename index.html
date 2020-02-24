@@ -10,24 +10,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <div id="nav-container" class="container">
 
 
-    <nav class="navbar navbar-expand-lg " style="height:100px;  float: none;
+    <nav class="navbar navbar-expand-lg nav-container container fixed-top" style="height:12.5vh;  float: none;
 position: relative;
 left: 0%;
 ">
       <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
-      <a class="navbar-brand" href="#">JOWETTC</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">JOWETT<span style ="color:#03b6fc">C</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style ="height: 25.5px">
         <span class="navbar-toggler-icon" style="width:10px"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
-        <ul class="navbar-nav" style="align-content: center;">
-        </ul>
-        <ul class="navbar-nav ml-auto">
+
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">home <span class="sr-only">(current)</span></a>
+            <a class="nav-link first_item active" href="index.html">home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">about<span class="sr-only"></span></a>
@@ -38,67 +36,44 @@ left: 0%;
           <li class="nav-item">
             <a class="nav-link" href="index.html">resume <span class="sr-only"></span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item right">
             <a class="nav-link" href="index.html">contact <span class="sr-only"></span></a>
           </li>
         </ul>
 
       </div>
     </nav>
-  </div>
+
 
 </head>
 
 <body>
-<div class= "container body-c">
 
 
-  <div class="background_color">
 
-    <div class="background">
+  <section id="homeSection" class="container body-c">
+    <div class="centered" style="">
 
-
-      <section id="homeSection" style="display:none">
-        <div class="centered" style ="margin-top:10vw">
-
-          <div style="">
-            <span id="homeSlogan">Developer</span>
-          </div>
-          <div>
-            <div class="hb home-button1">
-              <span>contact</span>
-            </div>
-            <div class="hb home-button2">
-              <span>resume</span>
-            </div>
-          </div>
-        </div>
-
-      </section>
+      <div style="">
+        <span id="homeSlogan">Welcome</span>
       </div>
-
-      <section id="aboutMeSection" style="display:none">
-        <span id>
-          I <br /> AM <br /> JOWETT
-        </span>
-        <div class="aboutBackground">
-
-
-
-
-          <div style="">
-            <span>
-              I AM JOWETT
-            </span>
-          </div>
-        </div>
-      </section>
+      <di class= "homeDetails">
+        <span> I'm a <span style ="color:#03b6fc">developer</span>, programming is my strong suit, but <span style ="color:#03b6fc">learning</span> is my strongest one.</span>
+      </div>
     </div>
-  </div>
-  <div >
 
+  </section>
   </div>
-</div>
+
+  <section id="aboutMeSection">
+    <img id = "about_pic" src="img/about_me.jpg" />
+    <div id="aboutDetails">
+      <span id="aboutHead">Values I bring</span>
+      <br />
+      <span> Hardwork and dilligence are basic fundementals to me. I have an unsatisfiable hunger for personal development. I graduated <b>top Singapore</b> in my previous course of study (Diploma In Business Applciations), <b>4th overall</b>. I'm in constant pursuit of techincal skills to further imrpove myself, enabling myself to contribution to future organisation and the community   </span>
+    </div>
+
+  </section>
 </body>
 <script>
   $("#homeSection").fadeIn(2500);
