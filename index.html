@@ -12,37 +12,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
 
-    <nav class="navbar navbar-expand-lg nav-container container fixed-top" style="height:12.5vh;  float: none;
+  <nav class="navbar navbar-expand-lg nav-container container fixed-top" style="height:12.5vh;  float: none;
 position: relative;
 left: 0%;
 ">
-      <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
-      <a class="navbar-brand" href="#">JOWETT<span style ="color:#03b6fc">C</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style ="height: 25.5px">
-        <span class="navbar-toggler-icon" style="width:10px"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
+    <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
+    <a class="navbar-brand" href="#">JOWETT<span style="color:#03b6fc">C</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="height: 25.5px">
+      <span class="navbar-toggler-icon" style="width:10px"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="">
 
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link first_item active" href="index.html">home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">about<span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">projects <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">resume <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item right">
-            <a class="nav-link" href="index.html">contact <span class="sr-only"></span></a>
-          </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link first_item active" href="index.html">home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">about<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">projects <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">resume <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item right">
+          <a class="nav-link" href="index.html">contact <span class="sr-only"></span></a>
+        </li>
+      </ul>
 
-      </div>
-    </nav>
+    </div>
+  </nav>
 
 
 </head>
@@ -51,39 +51,52 @@ left: 0%;
 
 
 
-  <section id="homeSection" class="container body-c">
+  <section id="homeSection" class="container body-c" style ="display:none">
     <div class="centered" style="">
 
       <div style="">
         <span id="homeSlogan">Welcome</span>
       </div>
-      <di class= "homeDetails">
-        <span> I'm a <span style ="color:#03b6fc">developer</span>, programming is my strong suit, but <span style ="color:#03b6fc">learning</span> is my strongest one.</span>
-      </div>
+      <di class="homeDetails">
+        <span> I'm a <span style="color:#03b6fc">developer</span>, programming is my strong suit, but <span style="color:#03b6fc">learning</span> is my strongest one.</span>
+    </div>
     </div>
 
   </section>
   </div>
 
   <section id="aboutMeSection">
-    <img id = "about_pic" src="img/about_me.jpg" />
-    <div id="aboutDetails">
-      <span id="aboutHead">Values I bring</span>
-      <br />
-      <span> Hardwork and dilligence are basic fundementals to me. I have an unsatisfiable hunger for personal development. I graduated <b>top Singapore</b> in my previous course of study (Diploma In Business Applciations), <b>4th overall</b>. I'm in constant pursuit of techincal skills to further imrpove myself, enabling myself to contribution to future organisation and the community   </span>
+    <div id="aboutMeContent">
+      <div id="about_pic_div" style="">
+        <img id="about_pic" src="img/about_me.jpg" />
+      </div>
+      <div id="aboutDetails">
+        <span id="aboutHead">Values I bring</span>
+        <br />
+        <span> Hardwork and dilligence are basic fundementals to me. I have an unsatisfiable hunger for personal development. I graduated <b>top Singapore</b> in my previous course of study (Diploma In Business Applciations), <b>4th overall</b>. I'm
+          in constant pursuit of techincal skills to further imrpove myself, enabling myself to contribution to future organisation and the community </span> <br /> <div id="aboutButton"><div id="aboutButtonWord">More</div></div>
+      </div>
     </div>
 
+    </div>
+
+  </section>
+  <section id="projectsSection1">
+    <div id= "projectContent1">
+    <div id = "project1Head">
+      <span class ="head">I'm a <span class ="head" style="color:#03b6fc">DECIATED</span> developer</span>
+    </div>
+    <div id="project1Detail">
+      <span>Always willing to tackle any problem head-on. Every project is a learning experience to better equipped myself. Below you'll find some of my most recent projects done for/with various organizations</span>
+
+    </div>
+    <div id="projectButton"><div id="projectbuttonWord">Projects</div></div>
+    </div>
   </section>
 </body>
 <script>
   $("#homeSection").fadeIn(2500);
-  // $("#aboutMeSection").fadeIn(2500);
 
-  //  var delayInMilliseconds = 2500;
-  //
-  // setTimeout(function() {
-  //
-  // }, delayInMilliseconds);
 </script>
 
 </html>
