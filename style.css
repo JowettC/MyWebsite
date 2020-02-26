@@ -120,25 +120,24 @@ body {
   /* font-family: "BPdots Bold"; */
   font-family: "Arial Black", "Gadget", sans-serif letter-spacing: 2px;
   word-spacing: 2px;
-  color: #000000;
+  color: #151515;
   /* font-weight: 700; */
   text-decoration: none solid rgb(68, 68, 68);
   font-style: normal;
   font-variant: normal;
   text-transform: uppercase;
   /* font-size:15px; */
+  background-color: #F0F0F0
 }
 
 body {
-  background-color: white;
   background-image: url(img/background.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  /* background-position: center; */
+  color: #151515 background-position: center;
 }
 
 /* .background_color{
-  background-color: black;
   background-size: 1920px 100%;
 
 } */
@@ -164,6 +163,10 @@ body {
 @media (min-width: 480px) {
   #homeSlogan {
     font-size: 5vw;
+  }
+
+  .homeDetails {
+    font-size: 20px
   }
 }
 
@@ -191,7 +194,9 @@ body {
 .centered {
   padding-top: 30vh;
   padding-bottom: 46vh;
-  opacity: 1
+  opacity: 1;
+  font-family: "Roboto Condensed", serif;
+  text-transform: none
 }
 
 .body-c {
@@ -211,7 +216,7 @@ section {}
     text-align: center;
   }
 
-  #homeSlogan {
+  #homeSlogan, #homeSlogan2 {
     font-size: 50px
   }
 
@@ -222,25 +227,22 @@ section {}
 
 /* about content ------------------------------------------------------------------------------------------------------*/
 #aboutMeSection {
-  justify-content: center;
-  /* margin-left: 10vw; */
-}
-
-#aboutMeSection div {
-  /* float: left; */
-}
-
-img {
-  width: 100%;
-}
-
-#aboutMeSection {
   letter-spacing: 0px;
   min-height: 100vh;
   font-family: "Georgia", serif;
   text-align: left;
   text-transform: none;
   font-weight: normal
+}
+
+.flexi-Section {
+  letter-spacing: 0px;
+  font-family: "Georgia", serif;
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
 #aboutHead {
@@ -250,14 +252,15 @@ img {
 
 #aboutDetails {
   margin-left: 5vw;
-  float:left
+  float: left
 }
+
 @media (min-width: 1610px) {
   #aboutMeContent {
     margin-top: 10vw;
   }
-
 }
+
 @media (min-width: 1025px) {
   #about_pic {
     height: auto;
@@ -287,7 +290,7 @@ img {
 #about_pic {
   height: auto;
   width: 30vw;
-  float:left
+  float: left
 }
 
 @media (max-width: 1025px) {
@@ -314,13 +317,16 @@ img {
 
   #aboutMeContent {
     float: left;
+    height: 60vw;
   }
 }
+
 @media (max-height: 569px) {
   #aboutMeSection {
     height: 150vh;
   }
 }
+
 @media (max-width: 800px) and and (min-width: 569px) {
   #aboutMeSection {
     height: 130vh
@@ -337,31 +343,31 @@ img {
   }
 }
 
-
 #aboutButton {
-  float:none;
-  text-align:center;
+  float: none;
+  text-align: center;
   border: solid;
   border-color: #03b6fc;
-  margin: auto;
+  margin: 0;
   width: 100px;
   font-size: 15px;
   margin-top: 20px;
   transition-property: background-color;
   transition-duration: .2s;
   transition-timing-function: linear;
-  color:#141414;
+  color: #141414;
 }
+
 #aboutButtonWord {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 #aboutButton:hover {
   background-color: #141414;
-  border-color:#141414;
-  color:#03b6fc;
+  border-color: #141414;
+  color: #03b6fc;
 }
-
 
 #projectButton {
   border: solid;
@@ -392,7 +398,7 @@ img {
 }
 
 @media (min-width: 1025px) {
-  #projectContent1 {
+  #projectContent1, .wordcontent {
     padding-top: 20vh;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -410,7 +416,59 @@ img {
 }
 
 @media (max-width: 1025px) {
-  #projectContent1 {
+  #projectContent1, .wordcontent {
+    padding-top: 8vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-bottom: 8vh;
+  }
+
+  .head {
+    margin: auto;
+    font-size: 10vw;
+    font-weight: bold;
+  }
+}
+
+#projectButton:hover {
+  background-color: #03b6fc
+}
+
+@media (max-width: 500px) {}
+
+/* project section 2 */
+#projectsSection2 {
+  /* height:100vh */
+}
+
+#projectsSection2 {
+  min-height: 50vh;
+  /* background-color: #191919; */
+  text-align: center;
+  text-transform: none;
+  font-family: "Georgia", serif;
+}
+
+@media (min-width: 1025px) {
+  #projectContent2 {
+    padding-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-bottom: 20vh;
+  }
+
+  #project2Head {
+    font-size: 5vh;
+    font-weight: bold;
+  }
+
+  #project2Detail {
+    font-size: 1.3vw
+  }
+}
+
+@media (max-width: 1025px) {
+  #projectContent2 {
     padding-top: 8vh;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -423,8 +481,93 @@ img {
   }
 }
 
-#projectButton:hover {
-  background-color: #03b6fc
+.column {
+  padding-bottom: 20px;
 }
 
-@media (max-width: 500px) {}
+@media (min-width: 1025px) {
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .shadow {
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 6px #ccc;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+
+  .row:hover {}
+
+  .des {
+    font-size: 1.3vw
+  }
+}
+
+#projectButton {
+  float: none;
+  text-align: center;
+  border: solid;
+  border-color: #03b6fc;
+  margin: auto;
+  width: 100px;
+  font-size: 15px;
+  margin-top: 20px;
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  color: #141414;
+}
+
+#projectButtonWord {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#projectButton:hover {
+  background-color: #141414;
+  border-color: #141414;
+  color: #03b6fc;
+}
+
+/*  */
+.centered2 {
+  padding-top: 15vh;
+  font-family: "Roboto Condensed", serif;
+  text-transform: none
+}
+
+.wordcontent {}
+
+.section-head {
+  font-size: 5vh;
+  width: auto;
+  margin: auto;
+  text-align: center
+}
+
+@media (min-width: 1025px) {
+  .section-head {
+    font-size: 5vh;
+  }
+  .widget_cover{
+    width: 35vw; margin:auto;
+  }
+}
+@media (max-width: 1025px) {
+  .widget_cover{
+    width: 45vw; margin:auto;
+  }
+}

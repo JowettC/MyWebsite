@@ -7,15 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
   <nav class="navbar navbar-expand-lg nav-container container fixed-top" style="height:12.5vh;  float: none;
 position: relative;
 left: 0%;
-">
+" data-aos="zoom-out-down">
     <!-- <img src="images/SBNLogo.png" height="50" style="padding-right:10px;" /> -->
     <a class="navbar-brand" href="#">JOWETT<span style="color:#03b6fc">C</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="height: 25.5px">
@@ -28,7 +30,7 @@ left: 0%;
           <a class="nav-link first_item active" href="index.html">home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">about<span class="sr-only"></span></a>
+          <a class="nav-link" href="about.html">about<span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.html">projects <span class="sr-only"></span></a>
@@ -51,13 +53,13 @@ left: 0%;
 
 
 
-  <section id="homeSection" class="container body-c" style ="display:none">
+  <section id="homeSection" class="container body-c">
     <div class="centered" style="">
 
-      <div style="">
+      <div style="" data-aos="zoom-out-down" data-aos-duration="2000">
         <span id="homeSlogan">Welcome</span>
       </div>
-      <di class="homeDetails">
+      <div class="homeDetails"data-aos="zoom-out-down" data-aos-duration="3000">
         <span> I'm a <span style="color:#03b6fc">developer</span>, programming is my strong suit, but <span style="color:#03b6fc">learning</span> is my strongest one.</span>
     </div>
     </div>
@@ -65,38 +67,71 @@ left: 0%;
   </section>
   </div>
 
-  <section id="aboutMeSection">
+  <section id="aboutMeSection" style="" data-aos="zoom-out-down" data-aos-duration="2000">
     <div id="aboutMeContent">
       <div id="about_pic_div" style="">
-        <img id="about_pic" src="img/about_me.jpg" />
+        <img id="about_pic" src="img/about_me.jpg" data-aos="fade-right" data-aos-duration="2000"/>
       </div>
-      <div id="aboutDetails">
-        <span id="aboutHead">Values I bring</span>
+      <div id="aboutDetails" data-aos="fade-left" data-aos-duration="2000">
+        <span id="aboutHead">Values I can bring</span>
         <br />
-        <span> Hardwork and dilligence are basic fundementals to me. I have an unsatisfiable hunger for personal development. I graduated <b>top Singapore</b> in my previous course of study (Diploma In Business Applciations), <b>4th overall</b>. I'm
-          in constant pursuit of techincal skills to further imrpove myself, enabling myself to contribution to future organisation and the community </span> <br /> <div id="aboutButton"><div id="aboutButtonWord">More</div></div>
+        <span> Hardwork and dilligence are basic fundementals to me. I have an unsatisfiable hunger for personal development. I graduated <b>top Singaporean</b> in my previous course of study (Diploma In Business Applciations), <b>4th overall</b>. I'm
+          in constant pursuit of techincal skills to further imrpove myself, enabling myself to contribution to future organisation and the community </span> <br />
+        <div id="aboutButton">
+          <div id="aboutButtonWord">More</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projectsSection1"data-aos="zoom-out-down" data-aos-duration="2000">
+    <div id="projectContent1">
+      <div id="project1Head">
+        <span class="head">I'm a <span class="head" style="color:#03b6fc">DEDICATED</span> developer</span>
+      </div>
+      <div id="project1Detail">
+        <span>Always willing to tackle any problem head-on. Every project is a learning experience to better equip myself. Below you'll find some of my most recent projects done for/with various organizations</span>
+
+      </div>
+    </div>
+  </section>
+  <section id="projectsSection2" data-aos="zoom-out-down" data-aos-duration="2000">
+    <div id="projectContent2">
+      <div id="project2Head">
+        <span class="head" >Recent Projects</span>
+      </div>
+      <div id="project2Detail">
+        <span>Worked with local, as well as international companies/organisations</span>
+      </div>
+      <br />
+      <div class="row">
+        <div class="column" data-aos="fade-right" data-aos-duration="2000">
+          <div>
+            <img src="img/project1.jpg" class ="shadow" alt="Snow" style="width:100%">
+            <span class= "des">Equipment service tracking</span>
+          </div>
+
+        </div>
+        <div class="column" data-aos="fade-up" data-aos-duration="2000">
+          <img src="img/project2.jpg" class ="shadow" alt="Forest" style="width:100%">
+          <span class= "des">International Munich bank API Sandbox</span>
+        </div>
+        <div class="column" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/project3.jpg" class ="shadow" alt="Mountains" style="width:100%">
+          <span class= "des">SG Non-profit organization</span>
+        </div>
+      </div>
+      <div id="projectButton">
+        <div id="projectButtonWord">More</div>
       </div>
     </div>
 
-    </div>
-
-  </section>
-  <section id="projectsSection1">
-    <div id= "projectContent1">
-    <div id = "project1Head">
-      <span class ="head">I'm a <span class ="head" style="color:#03b6fc">DECIATED</span> developer</span>
-    </div>
-    <div id="project1Detail">
-      <span>Always willing to tackle any problem head-on. Every project is a learning experience to better equipped myself. Below you'll find some of my most recent projects done for/with various organizations</span>
-
-    </div>
-    <div id="projectButton"><div id="projectbuttonWord">Projects</div></div>
-    </div>
   </section>
 </body>
 <script>
-  $("#homeSection").fadeIn(2500);
 
+  AOS.init();
+  $("#homeSection").fadeIn(2500);
 </script>
 
 </html>
