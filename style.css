@@ -34,6 +34,14 @@
   color: white;
   font-size: 10px
 }
+@media(max-width: 1024px){
+  ul li a {
+    color: white;
+    font-size: 10px
+  }
+}
+a { color: inherit; }
+
 
 .nav-link:hover {
   background-size: 4px 50px;
@@ -66,8 +74,14 @@ li {
 li {
   padding: 20px
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   nav div ul {
     width: 100%;
     margin-left: 19vw;
@@ -216,7 +230,7 @@ section {}
     text-align: center;
   }
 
-  #homeSlogan, #homeSlogan2 {
+  #homeSlogan, #homeSlogan2 ,.homeSlogan_color {
     font-size: 50px
   }
 
@@ -579,6 +593,10 @@ section {}
     margin: auto;
   }
 }
+.section-details{
+  width:70vw;
+  margin:auto
+}
 
 @media (max-width: 1025px) {
   .widget_cover {
@@ -654,4 +672,18 @@ section {}
 }
 .des-margin{
   margin-top:40%
+}
+.single-img-cover{
+  margin-left:auto;
+  margin-right:auto;
+}
+@media(min-width: 675px){
+  .single-img, .single-img-cover{
+    width:500px;
+  }
+}
+@media(max-width: 674px){
+  .single-img, .single-img-cover{
+    width:200px;
+  }
 }
