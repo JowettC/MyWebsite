@@ -1,6 +1,5 @@
-
 .navbar {
-  width:100vw;
+  width: 100vw;
   /* margin-left: 0;
   margin-right:0; */
   transition: all 0.4s;
@@ -141,12 +140,16 @@ a:hover {
 .show .navbar-nav .nav-item {
   /* width: 100% */
 }
-html *{
-  max-width:100vw;
+
+html * {
+  max-width: 100vw;
 }
+
 html,
 body {
-  max-width:100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
   /* height: 100%; */
   font-size: 1.2vh;
   font-weight: bold;
@@ -733,86 +736,84 @@ footer {
 }
 
 /* particle js */
+select {
+  min-width: 100%;
+}
 
-    select {
-      min-width: 100%;
-    }
+p {
+  margin-left: 0%;
+  font-size: 20px;
+}
 
-    p {
-      margin-left: 0%;
-      font-size: 20px;
-    }
+#leaderboard {
+  border-spacing: 0;
+  width: 100%;
+}
 
-    #leaderboard {
-      border-spacing: 0;
-      width: 100%;
-    }
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
 
-    #map {
-      width: 100%;
-      height: 400px;
-      background-color: grey;
-    }
+.btn {
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
-    .btn {
-      width: 100px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
+/* ---- reset ---- */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
 
-    /* ---- reset ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #151414;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
-    canvas {
-      display: block;
-      vertical-align: bottom;
-    }
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
 
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: #151414;
-      background-image: url("");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
+.js-count-particles {
+  font-size: 1.1em;
+}
 
-    /* ---- stats.js ---- */
-    .count-particles {
-      background: #000022;
-      position: absolute;
-      top: 48px;
-      left: 0;
-      width: 80px;
-      color: #13E8E9;
-      font-size: .8em;
-      text-align: left;
-      text-indent: 4px;
-      line-height: 14px;
-      padding-bottom: 2px;
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: bold;
-    }
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 
-    .js-count-particles {
-      font-size: 1.1em;
-    }
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
 
-    #stats,
-    .count-particles {
-      -webkit-user-select: none;
-      margin-top: 5px;
-      margin-left: 5px;
-    }
-
-    #stats {
-      border-radius: 3px 3px 0 0;
-      overflow: hidden;
-    }
-
-    .count-particles {
-      border-radius: 0 0 3px 3px;
-    }
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
