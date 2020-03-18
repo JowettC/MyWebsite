@@ -362,6 +362,7 @@ section {}
     float: left;
     height: 60vw;
   }
+
 }
 
 @media (max-height: 569px) {
@@ -816,4 +817,7 @@ canvas {
 
 .count-particles {
   border-radius: 0 0 3px 3px;
+}
+.section-head{
+  margin-top:50px;
 }
