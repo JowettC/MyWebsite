@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JowettC</title>
+  <title>JowettC.Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet">
@@ -14,6 +14,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<link rel="icon" href="img/web-programming.png">
 
 </head>
 
@@ -21,7 +22,7 @@
 <body>
   <nav class="navbar navbar-expand-lg nav-container container fixed-top" style="height:12.5vh; width:100vw; float: none; left: 0%;" data-aos="zoom-out-down">
     <a class="navbar-brand" href="index.html">
-      JOWETT<span style="color:#F5BD8F">C</span>
+      JOWETT<span style="color:#F5BD8F">C</span>()
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="height: 25.5px">
       <span class="navbar-toggler-icon" style="width:10px"></span>
@@ -53,10 +54,13 @@
     <div class="centered" style="">
 
       <div style="" data-aos="zoom-out-down" data-aos-duration="2000">
-        <span id="homeSlogan">Welcome</span>
+        <span id="homeSlogan">Hello, <br /> I'm <span id = "homeSlogan" style="color:#F5BD8F">Jowett</span></span>
       </div>
       <div class="homeDetails" data-aos="zoom-out-down" data-aos-duration="3000">
-        <span> I'm a <span style="color:#F5BD8F">developer</span>, programming is my strong suit, but <span style="color:#F5BD8F">learning</span> is my strongest one.</span>
+        <span style="width:100%"> I'm a <span style="color:#F5BD8F">developer</span>, programming is my strong suit, but <span style="color:#F5BD8F">learning</span> is my strongest one.</span> <br />
+        <div class="white-button"><a href="#contactMe">
+          <div id ="contactMeButton" class ="white-button-word">Contact me</div></a>
+        </div>
       </div>
     </div>
 
@@ -82,7 +86,6 @@
       </div>
     </div>
   </section>
-
   <section id="projectsSection1" data-aos="zoom-out-down" data-aos-duration="2000">
     <div id="projectContent1">
       <div id="project1Head">
@@ -90,7 +93,6 @@
       </div>
       <div id="project1Detail">
         <span>Always willing to tackle any problem head-on. Every project is a learning experience to better equip myself. Below you'll find some of my most recent projects done for/with various organizations</span>
-
       </div>
     </div>
   </section>
@@ -105,24 +107,57 @@
       <br />
       <div class="row">
         <div class="column" data-aos="fade-right" data-aos-duration="2000">
-          <div>
+          <div class="img_cover">
             <img src="img/project1.jpg" class="shadow" alt="Snow" style="width:100%">
-            <span class="des">Equipment service tracking</span>
+            <div class="img__description-cover">
+              <div class="des-margin">
+                <span class="img__description">Equipment Servicing Web App<BR /></span>
+                <span class="organisation_name">confidential cilent</span>
+                <a href="projects/ESA.html">
+                  <div class="button_des">
+                    <div class="button_des_word">View Project</div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-
         </div>
         <div class="column" data-aos="fade-up" data-aos-duration="2000">
-          <img src="img/project2.jpg" class="shadow" alt="Forest" style="width:100%">
-          <span class="des">International Munich bank API Sandbox</span>
+          <div class="img_cover">
+            <img src="img/project2.jpg" class="shadow" alt="Forest" style="width:100%">
+            <div class="img__description-cover">
+              <div class="des-margin">
+                <span class="img__description">Sandbox API system <br /></span>
+                <span class="organisation_name">Fidor Bank, Munich</span>
+                <a href="projects/fidorAPI.html">
+                  <div class="button_des">
+                    <div class="button_des_word">View Project</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="column" data-aos="fade-left" data-aos-duration="2000">
-          <img src="img/project3.jpg" class="shadow" alt="Mountains" style="width:100%">
-          <span class="des">National level Project</span>
+          <div class="img_cover">
+            <img src="img/mp1.jpg" class="shadow" alt="Mountains" style="width:100%">
+            <div class="img__description-cover">
+              <div class="des-margin">
+                <span class="img__description">Mask Packing <br /></span>
+                <span class="organisation_name">Singapore Armed Forces<br /></span>
+                <a href="projects/maskPack.html">
+                  <div class="button_des">
+                    <div class="button_des_word">View Project</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <a href="projects.html">
         <div id="projectButton">
-          <div id="projectButtonWord">Details <img src="img/next.png" class="shadow" alt="Snow" style="width:10%"></div>
+          <div id="projectButtonWord">All Projects <img src="img/next.png" class="shadow" alt="Snow" style="width:10%"></div>
         </div>
       </a>
     </div>

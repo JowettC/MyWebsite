@@ -94,6 +94,7 @@ a {
 }
 
 a:hover {
+  color:white;
   text-decoration: none;
 }
 
@@ -200,6 +201,9 @@ body {
   #homeSlogan {
     font-size: 5vw;
   }
+  .white-button{
+    float:left;
+  }
 
   .homeDetails {
     font-size: 20px
@@ -244,6 +248,7 @@ section {}
 /* home content -------------------------------------------------------------------------------------------------------*/
 #homeSection {
   color: white;
+  height:100vh
 }
 
 @media (max-width:480px) {
@@ -419,7 +424,7 @@ section {}
   border: solid;
   border-color: #F5BD8F;
   border-width: 1px;
-  margin: auto;
+  /* margin: auto; */
   width: 150px;
   font-size: 15px;
   margin-top: 50px;
@@ -427,10 +432,36 @@ section {}
   transition-duration: .2s;
   transition-timing-function: linear;
 }
+.white-button {
+  border: solid;
+  border-color: #F5BD8F;
+  border-width: 1px;
+  margin: auto;
+  width: 150px;
+  font-size: 15px;
+  margin-top: 50px;
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  text-align:center;
+}
 
 #projectbuttonWord {
   margin-top: 10px;
   margin-bottom: 10px
+}
+.white-button-word{
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+.white-button:hover{
+  background-color: #F5BD8F;
+  border-color: #141414;
+  border-width: 1px;
+  color:black
+}
+.white-button-word:hover{
+  color:black
 }
 
 /* project content ------------------------------------------------------------------------------------------------------*/
@@ -480,8 +511,11 @@ section {}
 #projectButton:hover {
   background-color: #F5BD8F
 }
+.white-button {
+}
+@media (max-width: 500px) {
 
-@media (max-width: 500px) {}
+}
 
 /* project section 2 */
 #projectsSection2 {
@@ -568,7 +602,7 @@ section {}
   border-color: #F5BD8F;
   border-width: 1px;
   margin: auto;
-  width: 100px;
+  width: 160px;
   font-size: 15px;
   margin-top: 20px;
   transition-property: background-color;

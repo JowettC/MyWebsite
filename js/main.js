@@ -1,5 +1,6 @@
 $(document).ready(function() {
   document.getElementById("contactMe").addEventListener("click", myFunction);
+  document.getElementById("contactMeButton").addEventListener("click", myFunction);
 
   function myFunction() {
     $('html,body').animate({
