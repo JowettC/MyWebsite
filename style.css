@@ -155,7 +155,8 @@ body {
   font-size: 1.2vh;
   font-weight: bold;
   letter-spacing: 2px;
-  font-family: "Arial Black", "Gadget", sans-serif letter-spacing: 2px;
+  font-family: "Arial Black", "Gadget", sans-serif;
+  letter-spacing: 2px;
   word-spacing: 2px;
   color: #151515;
   /* font-weight: 700; */
@@ -171,7 +172,8 @@ body {
   /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg"); */
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
-  color: #151515 background-position: center;
+  color: #151515;
+  background-position: center;
 }
 
 /* .background_color{
@@ -191,7 +193,7 @@ body {
   right: 0;
   position: absolute;
   /* z-index: 10; */
-}
+
 
 */ .container {
   justify-content: center;
@@ -376,13 +378,13 @@ section {}
   }
 }
 
-@media (max-width: 800px) and and (min-width: 569px) {
+@media (max-width: 800px) and (min-width: 569px) {
   #aboutMeSection {
     height: 130vh
   }
 }
 
-@media (max-width: 800px) and and (min-width: 569px) {
+@media (max-width: 800px) and (min-width: 569px) {
   #about_pic_div {
     margin-left: 20vw
   }
